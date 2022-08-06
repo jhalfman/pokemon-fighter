@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import NavBar from './components/navigation/NavBar';
 import Home from './components/static/Home';
 import { Routes, Route } from 'react-router-dom';
+import Pokemon from './components/pokemon/Pokemon';
 
 function App() {
 const [spriteList, setSpriteList] = useState([])
@@ -20,7 +21,7 @@ const [spriteList, setSpriteList] = useState([])
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/pokemon" element={<Pokemon />} />
         <Route path="/" element={<Home />} />
       </Routes>
     </div>
