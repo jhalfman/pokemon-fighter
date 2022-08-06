@@ -1,4 +1,7 @@
 import { useEffect, useState } from 'react';
+import NavBar from './components/navigation/NavBar';
+import Home from './components/static/Home';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
 const [spriteList, setSpriteList] = useState([])
@@ -14,7 +17,12 @@ const [spriteList, setSpriteList] = useState([])
                 
   return (
     <div className="App">
-      <h1>POKEMON FIGHT</h1>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
     </div>
   );
 }
