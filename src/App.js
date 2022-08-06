@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from 'react';
 
 function App() {
+const [spriteList, setSpriteList] = useState([])
+
+  useEffect(() => {fetch("http://localhost:3000/pokemon")
+  .then(resp => resp.json())
+  .then(data => {
+    const sprites = data.map(mon => {
+      return <img src={mon.sprite}></img>
+    })
+    setSpriteList(sprites);
+  })}, [])
+                
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          POKEMON FIGHTER
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>POKEMON FIGHT</h1>
     </div>
   );
 }
