@@ -4,6 +4,7 @@ import Home from './components/static/Home';
 import { Routes, Route } from 'react-router-dom';
 import Pokemon from './components/pokemon/Pokemon';
 import Team from './components/pokemon/Team';
+import Records from './components/pokemon/Records';
 
 function App() {
 const [spriteList, setSpriteList] = useState([])
@@ -24,6 +25,7 @@ const [spriteList, setSpriteList] = useState([])
         <Route path="/" element={<Home />} />
         <Route path="/pokemon" element={<Pokemon />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/records" element={<Records />} />
       </Routes>
     </div>
   );
