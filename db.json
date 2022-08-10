@@ -11,7 +11,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["grass attack", "poison attack"]
     },
     {
       "name": "ivysaur",
@@ -24,7 +24,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["grass attack", "poison attack"]
     },
     {
       "name": "venusaur",
@@ -37,7 +37,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["grass attack", "poison attack"]
     },
     {
       "name": "charmander",
@@ -50,7 +50,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["fire attack", "normal attack"]
     },
     {
       "name": "charmeleon",
@@ -63,7 +63,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["fire attack", "normal attack"]
     },
     {
       "name": "charizard",
@@ -76,7 +76,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["fire attack", "flying attack"]
     },
     {
       "name": "squirtle",
@@ -89,7 +89,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["water attack", "normal attack"]
     },
     {
       "name": "wartortle",
@@ -102,7 +102,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["water attack", "normal attack"]
     },
     {
       "name": "blastoise",
@@ -115,7 +115,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["water attack", "normal attack"]
     },
     {
       "name": "caterpie",
@@ -128,7 +128,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["bug attack", "normal attack"]
     },
     {
       "name": "metapod",
@@ -141,7 +141,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["bug attack", "normal attack"]
     },
     {
       "name": "butterfree",
@@ -154,7 +154,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["bug attack", "flying attack"]
     },
     {
       "name": "weedle",
@@ -167,7 +167,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["bug attack", "poison attack"]
     },
     {
       "name": "kakuna",
@@ -180,7 +180,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["bug attack", "poison attack"]
     },
     {
       "name": "beedrill",
@@ -193,7 +193,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["bug attack", "poison attack"]
     },
     {
       "name": "pidgey",
@@ -206,7 +206,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["normal attack", "flying attack"]
     },
     {
       "name": "pidgeotto",
@@ -219,7 +219,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["normal attack", "flying attack"]
     },
     {
       "name": "pidgeot",
@@ -232,7 +232,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["normal attack", "flying attack"]
     },
     {
       "name": "rattata",
@@ -245,7 +245,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["normal attack", "normal attack"]
     },
     {
       "name": "raticate",
@@ -258,7 +258,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["normal attack", "normal attack"]
     },
     {
       "name": "spearow",
@@ -271,7 +271,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["normal attack", "flying attack"]
     },
     {
       "name": "fearow",
@@ -284,7 +284,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["normal attack", "flying attack"]
     },
     {
       "name": "ekans",
@@ -297,7 +297,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["poison attack", "normal attack"]
     },
     {
       "name": "arbok",
@@ -310,7 +310,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["poison attack", "normal attack"]
     },
     {
       "name": "pikachu",
@@ -323,7 +323,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["electric attack", "normal attack"]
     },
     {
       "name": "raichu",
@@ -336,7 +336,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["electric attack", "normal attack"]
     },
     {
       "name": "sandshrew",
@@ -349,7 +349,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["ground attack", "normal attack"]
     },
     {
       "name": "sandslash",
@@ -362,7 +362,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["ground attack", "normal attack"]
     },
     {
       "name": "nidoran-f",
@@ -375,7 +375,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["poison attack", "normal attack"]
     },
     {
       "name": "nidorina",
@@ -388,7 +388,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["poison attack", "normal attack"]
     },
     {
       "name": "nidoqueen",
@@ -401,7 +401,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["poison attack", "ground attack"]
     },
     {
       "name": "nidoran-m",
@@ -414,7 +414,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["poison attack", "normal attack"]
     },
     {
       "name": "nidorino",
@@ -427,7 +427,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["poison attack", "normal attack"]
     },
     {
       "name": "nidoking",
@@ -439,7 +439,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["poison attack", "ground attack"]
     },
     {
       "name": "clefairy",
@@ -451,7 +451,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["normal attack", "normal attack"]
     },
     {
       "name": "clefable",
@@ -463,7 +463,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["normal attack", "normal attack"]
     },
     {
       "name": "vulpix",
@@ -476,7 +476,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["fire attack", "normal attack"]
     },
     {
       "name": "ninetales",
@@ -488,7 +488,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["fire attack", "normal attack"]
     },
     {
       "name": "jigglypuff",
@@ -500,7 +500,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["normal attack", "normal attack"]
     },
     {
       "name": "wigglytuff",
@@ -513,7 +513,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["normal attack", "normal attack"]
     },
     {
       "name": "zubat",
@@ -526,7 +526,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["poison attack", "flying attack"]
     },
     {
       "name": "golbat",
@@ -539,7 +539,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["poison attack", "flying attack"]
     },
     {
       "name": "oddish",
@@ -552,7 +552,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["grass attack", "poison attack"]
     },
     {
       "name": "gloom",
@@ -565,7 +565,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["grass attack", "poison attack"]
     },
     {
       "name": "vileplume",
@@ -578,7 +578,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["grass attack", "poison attack"]
     },
     {
       "name": "paras",
@@ -591,7 +591,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["bug attack", "grass attack"]
     },
     {
       "name": "parasect",
@@ -604,7 +604,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["bug attack", "grass attack"]
     },
     {
       "name": "venonat",
@@ -617,7 +617,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["bug attack", "poison attack"]
     },
     {
       "name": "venomoth",
@@ -630,7 +630,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["bug attack", "poison attack"]
     },
     {
       "name": "diglett",
@@ -643,7 +643,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["ground attack", "normal attack"]
     },
     {
       "name": "dugtrio",
@@ -656,7 +656,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["ground attack", "normal attack"]
     },
     {
       "name": "meowth",
@@ -669,7 +669,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["normal attack", "normal attack"]
     },
     {
       "name": "persian",
@@ -682,7 +682,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["normal attack", "normal attack"]
     },
     {
       "name": "psyduck",
@@ -695,7 +695,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["water attack", "normal attack"]
     },
     {
       "name": "golduck",
@@ -708,7 +708,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["water attack", "normal attack"]
     },
     {
       "name": "mankey",
@@ -721,7 +721,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["fighting attack", "normal attack"]
     },
     {
       "name": "primeape",
@@ -734,7 +734,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["fighting attack", "normal attack"]
     },
     {
       "name": "growlithe",
@@ -747,7 +747,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["fire attack", "normal attack"]
     },
     {
       "name": "arcanine",
@@ -760,7 +760,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["fire attack", "normal attack"]
     },
     {
       "name": "poliwag",
@@ -773,7 +773,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["water attack", "normal attack"]
     },
     {
       "name": "poliwhirl",
@@ -786,7 +786,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["water attack", "normal attack"]
     },
     {
       "name": "poliwrath",
@@ -799,7 +799,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["water attack", "fighting attack"]
     },
     {
       "name": "abra",
@@ -812,7 +812,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["psychic attack", "normal attack"]
     },
     {
       "name": "kadabra",
@@ -825,7 +825,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["psychic attack", "normal attack"]
     },
     {
       "name": "alakazam",
@@ -838,7 +838,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["psychic attack", "normal attack"]
     },
     {
       "name": "machop",
@@ -851,7 +851,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["fighting attack", "normal attack"]
     },
     {
       "name": "machoke",
@@ -864,7 +864,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["fighting attack", "normal attack"]
     },
     {
       "name": "machamp",
@@ -877,7 +877,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["fighting attack", "normal attack"]
     },
     {
       "name": "bellsprout",
@@ -890,7 +890,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["grass attack", "poison attack"]
     },
     {
       "name": "weepinbell",
@@ -903,7 +903,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["grass attack", "poison attack"]
     },
     {
       "name": "victreebel",
@@ -916,7 +916,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["grass attack", "poison attack"]
     },
     {
       "name": "tentacool",
@@ -929,7 +929,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["water attack", "poison attack"]
     },
     {
       "name": "tentacruel",
@@ -942,7 +942,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["water attack", "poison attack"]
     },
     {
       "name": "geodude",
@@ -955,7 +955,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["rock attack", "ground attack"]
     },
     {
       "name": "graveler",
@@ -968,7 +968,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["rock attack", "ground attack"]
     },
     {
       "name": "golem",
@@ -981,7 +981,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["rock attack", "ground attack"]
     },
     {
       "name": "ponyta",
@@ -994,7 +994,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["fire attack", "normal attack"]
     },
     {
       "name": "rapidash",
@@ -1007,7 +1007,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["fire attack", "normal attack"]
     },
     {
       "name": "slowpoke",
@@ -1020,7 +1020,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["water attack", "psychic attack"]
     },
     {
       "name": "slowbro",
@@ -1033,7 +1033,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["water attack", "psychic attack"]
     },
     {
       "name": "magnemite",
@@ -1046,7 +1046,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["electric attack", "normal attack"]
     },
     {
       "name": "magneton",
@@ -1059,7 +1059,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["electric attack", "normal attack"]
     },
     {
       "name": "farfetchd",
@@ -1072,7 +1072,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["normal attack", "flying attack"]
     },
     {
       "name": "doduo",
@@ -1085,7 +1085,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["normal attack", "flying attack"]
     },
     {
       "name": "dodrio",
@@ -1098,7 +1098,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["normal attack", "flying attack"]
     },
     {
       "name": "seel",
@@ -1111,7 +1111,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["water attack", "normal attack"]
     },
     {
       "name": "dewgong",
@@ -1124,7 +1124,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["water attack", "ice attack"]
     },
     {
       "name": "grimer",
@@ -1137,7 +1137,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["poison attack", "normal attack"]
     },
     {
       "name": "muk",
@@ -1150,7 +1150,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["poison attack", "normal attack"]
     },
     {
       "name": "shellder",
@@ -1163,7 +1163,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["water attack", "normal attack"]
     },
     {
       "name": "cloyster",
@@ -1176,7 +1176,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["water attack", "ice attack"]
     },
     {
       "name": "gastly",
@@ -1189,7 +1189,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["ghost attack", "poison attack"]
     },
     {
       "name": "haunter",
@@ -1202,7 +1202,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["ghost attack", "poison attack"]
     },
     {
       "name": "gengar",
@@ -1215,7 +1215,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["ghost attack", "poison attack"]
     },
     {
       "name": "onix",
@@ -1228,7 +1228,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["rock attack", "ground attack"]
     },
     {
       "name": "drowzee",
@@ -1241,7 +1241,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["psychic attack", "normal attack"]
     },
     {
       "name": "hypno",
@@ -1254,7 +1254,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["psychic attack", "normal attack"]
     },
     {
       "name": "krabby",
@@ -1267,7 +1267,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["water attack", "normal attack"]
     },
     {
       "name": "kingler",
@@ -1280,7 +1280,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["water attack", "normal attack"]
     },
     {
       "name": "voltorb",
@@ -1293,7 +1293,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["electric attack", "normal attack"]
     },
     {
       "name": "electrode",
@@ -1306,7 +1306,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["electric attack", "normal attack"]
     },
     {
       "name": "exeggcute",
@@ -1319,7 +1319,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["grass attack", "psychic attack"]
     },
     {
       "name": "exeggutor",
@@ -1332,7 +1332,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["grass attack", "psychic attack"]
     },
     {
       "name": "cubone",
@@ -1345,7 +1345,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["ground attack", "normal attack"]
     },
     {
       "name": "marowak",
@@ -1358,7 +1358,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["ground attack", "normal attack"]
     },
     {
       "name": "hitmonlee",
@@ -1371,7 +1371,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["fighting attack", "normal attack"]
     },
     {
       "name": "hitmonchan",
@@ -1384,7 +1384,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["fighting attack", "normal attack"]
     },
     {
       "name": "lickitung",
@@ -1397,7 +1397,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["normal attack", "normal attack"]
     },
     {
       "name": "koffing",
@@ -1410,7 +1410,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["poison attack", "normal attack"]
     },
     {
       "name": "weezing",
@@ -1423,7 +1423,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["poison attack", "normal attack"]
     },
     {
       "name": "rhyhorn",
@@ -1436,7 +1436,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["ground attack", "rock attack"]
     },
     {
       "name": "rhydon",
@@ -1449,7 +1449,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["ground attack", "rock attack"]
     },
     {
       "name": "chansey",
@@ -1462,7 +1462,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["normal attack", "normal attack"]
     },
     {
       "name": "tangela",
@@ -1475,7 +1475,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["grass attack", "normal attack"]
     },
     {
       "name": "kangaskhan",
@@ -1488,7 +1488,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["normal attack", "normal attack"]
     },
     {
       "name": "horsea",
@@ -1501,7 +1501,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["water attack", "normal attack"]
     },
     {
       "name": "seadra",
@@ -1514,7 +1514,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["water attack", "normal attack"]
     },
     {
       "name": "goldeen",
@@ -1527,7 +1527,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["water attack", "normal attack"]
     },
     {
       "name": "seaking",
@@ -1540,7 +1540,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["water attack", "normal attack"]
     },
     {
       "name": "staryu",
@@ -1553,7 +1553,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["water attack", "normal attack"]
     },
     {
       "name": "starmie",
@@ -1566,7 +1566,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["water attack", "psychic attack"]
     },
     {
       "name": "mr-mime",
@@ -1579,7 +1579,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["psychic attack", "normal attack"]
     },
     {
       "name": "scyther",
@@ -1592,7 +1592,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["bug attack", "flying attack"]
     },
     {
       "name": "jynx",
@@ -1605,7 +1605,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["ice attack", "psychic attack"]
     },
     {
       "name": "electabuzz",
@@ -1618,7 +1618,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["electric attack", "normal attack"]
     },
     {
       "name": "magmar",
@@ -1631,7 +1631,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["fire attack", "normal attack"]
     },
     {
       "name": "pinsir",
@@ -1644,7 +1644,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["bug attack", "normal attack"]
     },
     {
       "name": "tauros",
@@ -1657,7 +1657,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["normal attack", "normal attack"]
     },
     {
       "name": "magikarp",
@@ -1670,7 +1670,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["water attack", "normal attack"]
     },
     {
       "name": "gyarados",
@@ -1683,7 +1683,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["water attack", "flying attack"]
     },
     {
       "name": "lapras",
@@ -1696,7 +1696,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["water attack", "ice attack"]
     },
     {
       "name": "ditto",
@@ -1709,7 +1709,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["normal attack", "normal attack"]
     },
     {
       "name": "eevee",
@@ -1722,7 +1722,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["normal attack", "normal attack"]
     },
     {
       "name": "vaporeon",
@@ -1735,7 +1735,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["water attack", "normal attack"]
     },
     {
       "name": "jolteon",
@@ -1748,7 +1748,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["electric attack", "normal attack"]
     },
     {
       "name": "flareon",
@@ -1761,7 +1761,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["fire attack", "normal attack"]
     },
     {
       "name": "porygon",
@@ -1774,7 +1774,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["normal attack", "normal attack"]
     },
     {
       "name": "omanyte",
@@ -1787,7 +1787,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["rock attack", "water attack"]
     },
     {
       "name": "omastar",
@@ -1800,7 +1800,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["rock attack", "water attack"]
     },
     {
       "name": "kabuto",
@@ -1813,7 +1813,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["rock attack", "water attack"]
     },
     {
       "name": "kabutops",
@@ -1826,7 +1826,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["rock attack", "water attack"]
     },
     {
       "name": "aerodactyl",
@@ -1839,7 +1839,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["rock attack", "flying attack"]
     },
     {
       "name": "snorlax",
@@ -1852,7 +1852,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["normal attack", "normal attack"]
     },
     {
       "name": "articuno",
@@ -1865,7 +1865,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["ice attack", "flying attack"]
     },
     {
       "name": "zapdos",
@@ -1878,7 +1878,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["electric attack", "flying attack"]
     },
     {
       "name": "moltres",
@@ -1891,7 +1891,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["fire attack", "flying attack"]
     },
     {
       "name": "dratini",
@@ -1904,7 +1904,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["dragon attack", "normal attack"]
     },
     {
       "name": "dragonair",
@@ -1917,7 +1917,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["dragon attack", "normal attack"]
     },
     {
       "name": "dragonite",
@@ -1930,7 +1930,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["dragon attack", "flying attack"]
     },
     {
       "name": "mewtwo",
@@ -1943,7 +1943,7 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["psychic attack", "normal attack"]
     },
     {
       "name": "mew",
@@ -1956,7 +1956,10 @@
       },
       "hp": 100,
       "alive": true,
-      "abilities": []
+      "abilities": ["psychic attack", "normal attack"]
     }
+  ],
+  "teams": [
+    
   ]
 }
