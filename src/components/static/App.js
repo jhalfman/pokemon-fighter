@@ -37,7 +37,7 @@ function App() {
         <Route path="/pokemon" element={<Pokemon spriteList={spriteList}/>} />
         <Route path="/team" element={<Team pokemonList={pokemonList} teamList={teamList} setTeamList={setTeamList}/>} />
         <Route path="/records" element={<Records teamList={teamList}/>} />
-        <Route path="/battle" element={<Battle teamList={teamList}/>} />
+        <Route path="/battle" element={<Battle teamList={teamList} pokemonList={pokemonList}/>} />
       </Routes>
     </div>
   );
