@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import Pokemon from '../pokemon/Pokemon';
 import Team from '../pokemon/Team';
 import Records from '../pokemon/Records';
+import Battle from "../pokemon/Battle";
 
 function App() {
   const [spriteList, setSpriteList] = useState([]);
@@ -36,6 +37,7 @@ function App() {
         <Route path="/pokemon" element={<Pokemon spriteList={spriteList}/>} />
         <Route path="/team" element={<Team pokemonList={pokemonList} teamList={teamList} setTeamList={setTeamList}/>} />
         <Route path="/records" element={<Records teamList={teamList}/>} />
+        <Route path="/battle" element={<Battle teamList={teamList}/>} />
       </Routes>
     </div>
   );
