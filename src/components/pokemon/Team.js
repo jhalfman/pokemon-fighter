@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-const Team = ({pokemonList, teamList}) => {
+const Team = ({pokemonList, teamList, setTeamList}) => {
     const [teamForm, setTeamForm] = useState({
         teamName: "",
         wins: 0,
@@ -86,7 +86,9 @@ const Team = ({pokemonList, teamList}) => {
             },
             body: JSON.stringify(teamForm)
         }).then(resp => resp.json())
-        .then(data => console.log("posted", data))
+        .then(data => {
+            setTeamList([...teamList, data])
+        })
     }
 
   return (

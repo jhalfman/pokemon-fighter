@@ -34,7 +34,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/pokemon" element={<Pokemon spriteList={spriteList}/>} />
-        <Route path="/team" element={<Team pokemonList={pokemonList} teamList={teamList}/>} />
+        <Route path="/team" element={<Team pokemonList={pokemonList} teamList={teamList} setTeamList={setTeamList}/>} />
         <Route path="/records" element={<Records teamList={teamList}/>} />
       </Routes>
     </div>

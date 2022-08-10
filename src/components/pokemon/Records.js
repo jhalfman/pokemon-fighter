@@ -1,8 +1,19 @@
 import React from 'react'
 
-const Records = () => {
+const Records = ({teamList}) => {
   return (
-    <div>Records</div>
+    <div>
+        {teamList.map(team => {
+            return (
+                <div>
+                    <h1>{team.teamName}</h1>
+                    <h3>wins: {team.wins}</h3>
+                    <h3>losses: {team.losses}</h3>
+                    <h3>draws: {team.draws}</h3>
+                </div>
+            )
+        })}
+    </div>
   )
 }
 
