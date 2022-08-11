@@ -1,21 +1,11 @@
-import React from 'react';
-import { useEffect, useState } from 'react';
+import React from 'react'
 
-const Pokemon = () => {
-    const [spriteList, setSpriteList] = useState([])
-
-    useEffect(() => {fetch("http://localhost:3000/pokemon")
-    .then(resp => resp.json())
-    .then(data => {
-        const sprites = data.map(mon => {
-        return <img src={mon.sprite} key={mon.name}></img>
-    })
-    setSpriteList(sprites);
-    })}, [])
+const Pokemon = ({sprite, highlightPokemon}) => {
+    
 
     return (
-        <div>{spriteList}</div>
+        <img id='pokemonSprite' src={sprite.sprite} onClick={() => highlightPokemon(sprite)}></img>
     )
 }
 
-export default Pokemon
+export default Pokemon;

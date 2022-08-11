@@ -11,3 +11,103 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navBar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  border-style: solid;
+  border-color: steelblue;
+}
+
+.link {
+  border-style: solid;
+  border-color: gray;
+  color: blue;
+  font-size: 30px;
+}
+
+.mainContainer {
+  border-style: solid;
+  border-color: black;
+  display: flex;
+}
+
+.pokemonContainer {
+  border-style: solid;
+  border-color: teal;
+  width: 65%;
+}
+
+#pokemonSprite {
+  border-style: solid;
+  border-color: tan;
+  width: 60px;
+  margin: 5px;
+}
+
+.pokemonHighlight {
+  display: flex;
+  border-style: solid;
+  border-color: green;
+  flex-direction: column;
+  width: 35%;
+  
+}
+
+#highlightTitle {
+  border-style: solid;
+  border-color: purple;
+  text-align: center;
+  margin: 0;
+
+}
+
+#highlightedPokemon {
+  width: 400px;
+  margin: auto;
+  border-style: solid;
+  border-color: blue;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#statBox {
+  border-style: solid;
+  border-color: magenta;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#teamForm {
+  border-style: solid;
+  border-color: gold;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#teamNameField {
+  width: 60%;
+}
+
+.teamThumbnail {
+  border-style: solid;
+  border-color: black;
+  flex-direction: row;
+  display: flex;
+  width: 32%;
+  margin: auto;
+}
+
+.teamThumbnail img {
+  margin: auto;
+  background-color:gray;
+  justify-content: center;
+  width: 100px;
+}
+
+#submitButton {
+  margin:auto;
+  width: 300px;
+}
