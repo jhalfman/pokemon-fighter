@@ -2582,6 +2582,61 @@
         ]
       },
       "id": 3
+    },
+    {
+      "teamName": "Starter Final Forms",
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "pokemon1": {
+        "name": "venusaur",
+        "url": "https://pokeapi.co/api/v2/pokemon/3/",
+        "id": 3,
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+        "types": {
+          "type1": "grass",
+          "type2": "poison"
+        },
+        "hp": 100,
+        "alive": true,
+        "abilities": [
+          "grass attack",
+          "poison attack"
+        ]
+      },
+      "pokemon2": {
+        "name": "charizard",
+        "url": "https://pokeapi.co/api/v2/pokemon/6/",
+        "id": 6,
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+        "types": {
+          "type1": "fire",
+          "type2": "flying"
+        },
+        "hp": 100,
+        "alive": true,
+        "abilities": [
+          "fire attack",
+          "flying attack"
+        ]
+      },
+      "pokemon3": {
+        "name": "blastoise",
+        "url": "https://pokeapi.co/api/v2/pokemon/9/",
+        "id": 9,
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+        "types": {
+          "type1": "water",
+          "type2": "none"
+        },
+        "hp": 100,
+        "alive": true,
+        "abilities": [
+          "water attack",
+          "normal attack"
+        ]
+      },
+      "id": 4
     }
   ]
 }

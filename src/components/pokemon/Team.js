@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
+import {useNavigate} from 'react-router-dom';
 
 const Team = ({pokemonList, teamList, setTeamList}) => {
     const [teamForm, setTeamForm] = useState({
@@ -67,7 +68,9 @@ const Team = ({pokemonList, teamList, setTeamList}) => {
         
     }
 
-    function handleSubmit(e) {
+    const navigate = useNavigate();
+
+    async function handleSubmit(e) {
         e.preventDefault();
 
         if (teamForm.pokemon1.name === teamForm.pokemon2.name || teamForm.pokemon2.name === teamForm.pokemon3.name || teamForm.pokemon1.name === teamForm.pokemon3.name) {
@@ -79,7 +82,7 @@ const Team = ({pokemonList, teamList, setTeamList}) => {
             alert("Team name already used")
             return null;
         }
-        fetch("http://localhost:3000/teams", {
+        await fetch("http://localhost:3000/teams", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -89,6 +92,7 @@ const Team = ({pokemonList, teamList, setTeamList}) => {
         .then(data => {
             setTeamList([...teamList, data])
         })
+        navigate("/battle", {state: {teamName: teamForm.teamName}});
     }
 
   return (

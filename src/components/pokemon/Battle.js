@@ -1,8 +1,18 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react';
+import { useLocation } from 'react-router-dom';
 
 const Battle = ({teamList, pokemonList}) => {
     const [currentTeam, setCurrentTeam] = useState({teamName: "default"});
     const [opponentTeam, setOpponentTeam] = useState([]);
+    
+    const nameState = useLocation().state;
+    useEffect(() => {
+        if (nameState) {
+            const teamSelection = teamList.find(team => team.teamName === nameState.teamName);
+            setCurrentTeam(teamSelection);
+        }
+    }, [])
+    
 
     function selectTeam(e) {
         if (e.target.value === "default") {
