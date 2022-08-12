@@ -532,6 +532,7 @@
       "name": "nidoking",
       "url": "https://pokeapi.co/api/v2/pokemon/34/",
       "id": 34,
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png",
       "types": {
         "type1": "poison",
         "type2": "ground"
@@ -547,6 +548,7 @@
       "name": "clefairy",
       "url": "https://pokeapi.co/api/v2/pokemon/35/",
       "id": 35,
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png",
       "types": {
         "type1": "normal",
         "type2": "none"
@@ -562,6 +564,7 @@
       "name": "clefable",
       "url": "https://pokeapi.co/api/v2/pokemon/36/",
       "id": 36,
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png",
       "types": {
         "type1": "normal",
         "type2": "none"
@@ -593,6 +596,7 @@
       "name": "ninetales",
       "url": "https://pokeapi.co/api/v2/pokemon/38/",
       "id": 38,
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png",
       "types": {
         "type1": "fire",
         "type2": "none"
@@ -608,6 +612,7 @@
       "name": "jigglypuff",
       "url": "https://pokeapi.co/api/v2/pokemon/39/",
       "id": 39,
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png",
       "types": {
         "type1": "normal",
         "type2": "none"

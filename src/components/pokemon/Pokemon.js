@@ -1,12 +1,15 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
+import {Link} from 'react-router-dom';
 
-const Pokemon = ({spriteList}) => {
-    
+const Pokemon = ({pokemon}) => {
 
     return (
-        <div>{spriteList}</div>
+        <Link to={`/pokemon/${pokemon.id}`} ><img id='pokemonSprite' src={pokemon.sprite}></img></Link>
     )
 }
 
-export default Pokemon
+export default Pokemon;
+
+/* pass state variable if want to use state instead of params
+state={{highlight: pokemon}}
+*/

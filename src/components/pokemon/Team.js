@@ -126,3 +126,47 @@ const Team = ({pokemonList, teamList, setTeamList}) => {
 }
 
 export default Team
+
+/* 
+import React from 'react'
+
+const Team = ({team, removeFromTeam}) => {
+  return (
+    <div>
+      <h2>CURRENT TEAM</h2>
+      {team.map(mon => {
+        return (
+          <div>
+            <img src={mon.sprite} alt="team pic" key={mon.name}></img>
+            <button onClick={() => removeFromTeam(mon)}>REMOVE FROM TEAM</button>
+          </div>
+        )
+      })}
+      <button>FIGHT</button>
+    </div>
+  )
+}
+
+export default Team
+*/
+
+/*
+import React from 'react'
+
+const TeamForm = ({team}) => {
+    console.log(team);
+  return (
+    <form id='teamForm'>
+        <h2 style={{width: "100%", textAlign: 'center'}}>Current Team</h2>
+        <label name="teamName">Enter Team Name:</label>
+        <input type="text" name="teamName" id="teamNameField" placeholder='...'></input>
+        <div className='teamThumbnail'>{team[0] ? <img src={team[0].sprite}/> : null}</div>
+        <div className='teamThumbnail'>{team[1] ? <img src={team[1].sprite}/> : null}</div>
+        <div className='teamThumbnail'>{team[2] ? <img src={team[2].sprite}/> : null}</div>
+        <input type="submit" id="submitButton" value="Submit Team For Fight"></input>
+    </form>
+  )
+}
+
+export default TeamForm
+*/
