@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 
 const Battle = ({teamList, pokemonList}) => {
     const [currentTeam, setCurrentTeam] = useState({teamName: "default"});
-    const [opponentTeam, setOpponentTeam] = useState([]);
+    const [opponentTeam, setOpponentTeam] = useState(null);
     
     const nameState = useLocation().state;
     useEffect(() => {
@@ -52,6 +52,10 @@ const Battle = ({teamList, pokemonList}) => {
         </select>
         {currentTeam.teamName !== "default" ? <div><img src={currentTeam.pokemon1.sprite}/><img src={currentTeam.pokemon2.sprite}/> <img src={currentTeam.pokemon3.sprite}/></div> : null}
         {currentTeam.teamName !== "default" ? <button onClick={startFight}>Start Fight</button> : null}
+        <h3>Opponent Team</h3>
+        {opponentTeam ? opponentTeam.map(opponent => {
+            return <img src={opponent.sprite}></img>
+        }) : null}
     </div>
   )
 }
