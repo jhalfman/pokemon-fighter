@@ -2420,9 +2420,9 @@
   "teams": [
     {
       "teamName": "Starter pokemon",
-      "wins": 0,
-      "losses": 0,
-      "draws": 0,
+      "wins": 2,
+      "losses": 2,
+      "draws": 4,
       "pokemon1": {
         "name": "bulbasaur",
         "url": "https://pokeapi.co/api/v2/pokemon/1/",
@@ -2475,9 +2475,9 @@
     },
     {
       "teamName": "Legendary Birds",
-      "wins": 0,
-      "losses": 0,
-      "draws": 0,
+      "wins": 1,
+      "losses": 2,
+      "draws": 4,
       "pokemon1": {
         "name": "articuno",
         "url": "https://pokeapi.co/api/v2/pokemon/144/",
@@ -2530,8 +2530,8 @@
     },
     {
       "teamName": "Eevolutions",
-      "wins": 0,
-      "losses": 0,
+      "wins": 1,
+      "losses": 3,
       "draws": 0,
       "pokemon1": {
         "name": "vaporeon",
@@ -2585,9 +2585,9 @@
     },
     {
       "teamName": "Starter Final Forms",
-      "wins": 0,
+      "wins": 1,
       "losses": 0,
-      "draws": 0,
+      "draws": 2,
       "pokemon1": {
         "name": "venusaur",
         "url": "https://pokeapi.co/api/v2/pokemon/3/",
@@ -2640,9 +2640,9 @@
     },
     {
       "teamName": "Cool guys",
-      "wins": 0,
+      "wins": 1,
       "losses": 0,
-      "draws": 0,
+      "draws": 3,
       "pokemon1": {
         "name": "alakazam",
         "url": "https://pokeapi.co/api/v2/pokemon/65/",

@@ -25,6 +25,18 @@ function App() {
     setTeamList(data);
    })
 }, [])
+
+function newRecordUpdate(newTeamRecord) {
+  const newTeamList = teamList.map(team => {
+    if (team.teamName === newTeamRecord.teamName) {
+      return newTeamRecord
+    }
+    else {
+      return team;
+    }
+  })
+  setTeamList([...newTeamList]);
+}
                 
   return (
     <div className="App">
@@ -37,7 +49,7 @@ function App() {
         </Route>
         <Route path="/team" element={<Team pokemonList={pokemonList} teamList={teamList} setTeamList={setTeamList}/>} />
         <Route path="/records" element={<Records teamList={teamList}/>} />
-        <Route path="/battle" element={<Battle teamList={teamList} pokemonList={pokemonList}/>} />
+        <Route path="/battle" element={<Battle teamList={teamList} pokemonList={pokemonList} newRecordUpdate={newRecordUpdate}/>} />
       </Routes>
     </div>
   );

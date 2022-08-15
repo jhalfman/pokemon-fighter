@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import { useLocation } from 'react-router-dom';
 
-const Battle = ({teamList, pokemonList}) => {
+const Battle = ({teamList, pokemonList, newRecordUpdate}) => {
     const [currentTeam, setCurrentTeam] = useState({teamName: "default"});
     const [opponentTeam, setOpponentTeam] = useState(null);
     const [currentFighter, setCurrentFighter] = useState(null);
     const [opponentFighter, setOpponentFighter] = useState(null);
+    const [outcome, setOutcome] = useState(null)
     
     const nameState = useLocation().state;
     useEffect(() => {
@@ -43,12 +44,196 @@ const Battle = ({teamList, pokemonList}) => {
     }
 
     function opponentSelection() {
-        let randomOpp =  Math.floor(Math.random() * 3) + 1;
+        let randomOpp =  Math.floor(Math.random() * 3);
         setOpponentFighter(opponentTeam[randomOpp]);
     }
 
+    function resetBattle() {
+        setCurrentTeam({teamName: "default"})
+        setOpponentTeam(null);
+        setCurrentFighter(null);
+        setOpponentFighter(null);
+        setOutcome(null);
+    }
+
+    
+    function recordUpdate(outcome) {
+        let updatedRecord = {[outcome]: currentTeam[outcome] + 1}
+        setOutcome(outcome);
+        fetch(`http://localhost:3000/teams/${currentTeam.id}`, {
+            method: "PATCH",
+            headers: {
+                "Accept": "applicaton/json",
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(
+                updatedRecord
+            )
+        })
+        .then(resp=>resp.json())
+        .then(data => {
+            setTimeout(resetBattle, 3500);
+            newRecordUpdate(data);
+        })
+    }
+
     function attack(fighter, attackNumber) {
-        console.log(fighter.abilities[attackNumber])
+        switch(fighter.abilities[attackNumber]) {           
+            case "normal attack":
+                if (opponentFighter.types.type1 === "rock" || opponentFighter.types.type1 === "ghost") {
+                    recordUpdate("losses")
+                }
+                else {
+                    recordUpdate("draws")
+                }
+                break;
+            case "fighting attack":
+                if (opponentFighter.types.type1 === "normal" || opponentFighter.types.type1 === "rock" || opponentFighter.types.type1 === "ice") {
+                    recordUpdate("wins")
+                }
+                else if (opponentFighter.types.type1 === "flying" || opponentFighter.types.type1 === "poison" || opponentFighter.types.type1 === "bug" || opponentFighter.types.type1 === "psychic") {
+                    recordUpdate("losses")
+                }
+                else {
+                    recordUpdate("draws")
+                }
+                break;
+            case "flying attack":
+                if (opponentFighter.types.type1 === "fighting" || opponentFighter.types.type1 === "bug" || opponentFighter.types.type1 === "grass") {
+                    recordUpdate("wins")
+                }
+                else if (opponentFighter.types.type1 === "rock" || opponentFighter.types.type1 === "electric" ) {
+                    recordUpdate("losses")
+                }
+                else {
+                    recordUpdate("draws")
+                }
+                break;
+            case "poison attack":
+                if (opponentFighter.types.type1 === "grass") {
+                    recordUpdate("wins")
+                }
+                else if (opponentFighter.types.type1 === "poison" || opponentFighter.types.type1 === "ground" || opponentFighter.types.type1 === "rock" || opponentFighter.types.type1 === "ghost") {
+                    recordUpdate("losses")
+                }
+                else {
+                    recordUpdate("draws")
+                }
+                break;
+            case "ground attack":
+                if (opponentFighter.types.type1 === "poison" || opponentFighter.types.type1 === "rock" || opponentFighter.types.type1 === "fire" || opponentFighter.types.type1 === "electric") {
+                    recordUpdate("wins")
+                }
+                else if (opponentFighter.types.type1 === "bug" || opponentFighter.types.type1 === "grass") {
+                    recordUpdate("losses")
+                }
+                else {
+                    recordUpdate("draws")
+                }
+                break;
+            case "rock attack":
+                if (opponentFighter.types.type1 === "flying" || opponentFighter.types.type1 === "bug" || opponentFighter.types.type1 === "fire" || opponentFighter.types.type1 === "ice") {
+                    recordUpdate("wins")
+                }
+                else if (opponentFighter.types.type1 === "fighting" || opponentFighter.types.type1 === "ground") {
+                    recordUpdate("losses")
+                }
+                else {
+                    recordUpdate("draws")
+                }
+                break;
+            case "bug attack":
+                if (opponentFighter.types.type1 === "grass" || opponentFighter.types.type1 === "psychic") {
+                    recordUpdate("wins")
+                }
+                else if (opponentFighter.types.type1 === "fighing" || opponentFighter.types.type1 === "flying" || opponentFighter.types.type1 === "poison" || opponentFighter.types.type1 === "ghost" || opponentFighter.types.type1 === "fire") {
+                    recordUpdate("losses")
+                }
+                else {
+                    recordUpdate("draws")
+                }
+            case "ghost attack":
+                if (opponentFighter.types.type1 === "ghost" || opponentFighter.types.type1 === "psychic") {
+                    recordUpdate("wins")
+                }
+                else {
+                    recordUpdate("draws")
+                }
+                break;
+            case "fire attack":
+                if (opponentFighter.types.type1 === "bug" || opponentFighter.types.type1 === "grass" || opponentFighter.types.type1 === "ice") {
+                    recordUpdate("wins")
+                }
+                else if (opponentFighter.types.type1 === "rock" || opponentFighter.types.type1 === "fire" || opponentFighter.types.type1 === "water" || opponentFighter.types.type1 === "dragon") {
+                    recordUpdate("losses")
+                }
+                else {
+                    recordUpdate("draws")
+                }
+                break;
+            case "water attack":
+                if (opponentFighter.types.type1 === "ground" || opponentFighter.types.type1 === "rock" || opponentFighter.types.type1 === "fire") {
+                    recordUpdate("wins")
+                }
+                else if (opponentFighter.types.type1 === "water" || opponentFighter.types.type1 === "grass" || opponentFighter.types.type1 === "dragon") {
+                    recordUpdate("losses")
+                }
+                else {
+                    recordUpdate("draws")
+                }
+                break;
+            case "grass attack":
+                if (opponentFighter.types.type1 === "ground" || opponentFighter.types.type1 === "rock" || opponentFighter.types.type1 === "water") {
+                    recordUpdate("wins")
+                }
+                else if (opponentFighter.types.type1 === "flying" || opponentFighter.types.type1 === "poison" || opponentFighter.types.type1 === "grass" || opponentFighter.types.type1 === "bug" || opponentFighter.types.type1 === "fire" || opponentFighter.types.type1 === "dragon") {
+                    recordUpdate("losses")
+                }
+                else {
+                    recordUpdate("draws")
+                }
+                break;
+            case "electric attack":
+                if (opponentFighter.types.type1 === "flying" || opponentFighter.types.type1 === "water") {
+                    recordUpdate("wins")
+                }
+                else if (opponentFighter.types.type1 === "ground" || opponentFighter.types.type1 === "grass" || opponentFighter.types.type1 === "electric" || opponentFighter.types.type1 === "dragon") {
+                    recordUpdate("losses")
+                }
+                else {
+                    recordUpdate("draws")
+                }
+                break;
+            case "psychic attack":
+                if (opponentFighter.types.type1 === "fighting" || opponentFighter.types.type1 === "poison") {
+                    recordUpdate("wins")
+                }
+                else if (opponentFighter.types.type1 === "psychic") {
+                    recordUpdate("losses")
+                }
+                else {
+                    recordUpdate("draws")
+                }
+                break;
+            case "ice attack":
+                if (opponentFighter.types.type1 === "flying" || opponentFighter.types.type1 === "ground" || opponentFighter.types.type1 === "dragon") {
+                    recordUpdate("wins")
+                }
+                else if (opponentFighter.types.type1 === "fire" || opponentFighter.types.type1 === "water" || opponentFighter.types.type1 === "ice") {
+                    recordUpdate("losses")
+                }
+                else {
+                    recordUpdate("draws")
+                }
+                break;
+            case "dragon attack":
+                if (opponentFighter.types.type1 === "dragon") {
+                    recordUpdate("wins")
+                }
+                else {
+                    recordUpdate("draws")
+                }
+        }
     }
 
 
@@ -126,6 +311,9 @@ const Battle = ({teamList, pokemonList}) => {
                     <img src={opponentFighter.sprite}></img>
                 </div>
             ) : null}
+            {(outcome === "wins") ? <h2>YOU WIN</h2> : null}
+            {(outcome === "losses") ? <h2>YOU LOSE</h2> : null}
+            {(outcome === "draws") ? <h2>YOU TIE</h2> : null}
             </>
         )
             
