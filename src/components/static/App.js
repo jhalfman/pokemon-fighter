@@ -48,8 +48,8 @@ function newRecordUpdate(newTeamRecord) {
           <Route path="" element={<h1 style={{textAlign: "center", width: "35%"}}>Select a Pokemon</h1>}></Route>
         </Route>
         <Route path="/team" element={<Team pokemonList={pokemonList} teamList={teamList} setTeamList={setTeamList}/>} />
-        <Route path="/records" element={<Records teamList={teamList}/>} />
         <Route path="/battle" element={<Battle teamList={teamList} pokemonList={pokemonList} newRecordUpdate={newRecordUpdate}/>} />
+        <Route path="/records" element={<Records teamList={teamList}/>} />
       </Routes>
     </div>
   );
