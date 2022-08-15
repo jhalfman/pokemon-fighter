@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(170, 167, 167);
 }
 
 code {
@@ -21,10 +22,21 @@ code {
 }
 
 .link {
-  border-style: solid;
-  border-color: gray;
   color: blue;
   font-size: 30px;
+  text-decoration: none;
+}
+
+#homePage {
+  background-image: url('https://i.imgur.com/58JIZPC.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: absolute;
+  top:50px;
+  right:0px;
+  bottom:0px;
+  left:0px;
 }
 
 .mainContainer {
@@ -35,13 +47,13 @@ code {
 
 .pokemonContainer {
   border-style: solid;
-  border-color: teal;
+  border-color: black;
   width: 65%;
 }
 
 #pokemonSprite {
   border-style: solid;
-  border-color: tan;
+  border-color: rgb(73, 73, 73);
   width: 60px;
   margin: 5px;
 }
@@ -49,15 +61,15 @@ code {
 .pokemonHighlight {
   display: flex;
   border-style: solid;
-  border-color: green;
+  border-color: black;
   flex-direction: column;
   width: 35%;
   
 }
 
 #highlightTitle {
-  border-style: solid;
-  border-color: purple;
+  border: solid;
+  border-color: magenta;
   text-align: center;
   margin: 0;
 
@@ -66,8 +78,7 @@ code {
 #highlightedPokemon {
   width: 400px;
   margin: auto;
-  border-style: solid;
-  border-color: blue;
+  
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -80,34 +91,179 @@ code {
   margin-bottom: 0;
 }
 
-#teamForm {
-  border-style: solid;
-  border-color: gold;
+#pokemonTeamForm {
+
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#pokemon1 {
+  border-style: solid;
+  border-color: blue;
+  display:flex;
+  flex-direction: column;
+  width: 25%
+}
+
+
+#pokemon2 {
+  border-style: solid;
+  border-color: blue;
+  display:flex;
+  flex-direction: column;
+  width: 25%
+}
+
+#pokemon3 {
+  border-style: solid;
+  border-color: blue;
+  display:flex;
+  flex-direction: column;
+  width: 25%
+}
+
+#pokemonList1 {
+  height:40px;
+  width: 100%;
+  text-align: center;
+  margin: auto
+}
+
+#pokemonList2 {
+  height:40px;
+  width: 100%;
+  text-align: center;
+  margin: auto
+}
+
+#pokemonList3 {
+  height:40px;
+  width: 100%;
+  text-align: center;
+  margin: auto
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+#teamNameSubmission {
+  width: 20%;
+  height: 40px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#teamSubmissionButton {
+  width: 20%;
+  height: 30px;
+  margin-top: 10px;
+}
+
+#recordsBox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#teamScore {
+  text-align: center;
+  width: 25%;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  border-style: solid;
+  border-color: rgb(240, 117, 2);
+}
+
+#teamScore h1 {
+  text-decoration: underline;
+}
+
+#battleBoxContainer {
+  display: flex;
+  flex-wrap: wrap;
+  border-style: solid;
+  border-color: blue;
+  justify-content: space-around;
+}
+
+#currentTeam {
+  border-style: solid;
+  border-color: blue;
+  width: 15%;
+  height: 30px;
+}
+
+.teamPreview {
+  width: 200px;
+}
+
+#startFightButton {
+  width: 15%;
+  height: 30px;
+}
+
+
+
+.battlePokemon h4 {
+  text-align: center;
+}
+
+.battlePokemon img {
+  width: 200px;
+}
+
+#fighterSelect {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  width: 30%;
+}
+
+#currentFighter {
+  width: 30%;
+  display:flex;
   flex-wrap: wrap;
 }
 
-#teamNameField {
-  width: 60%;
+#enemyFighter {
+  display:flex;
+  width: 30%;
 }
 
-.teamThumbnail {
-  border-style: solid;
-  border-color: black;
-  flex-direction: row;
-  display: flex;
-  width: 32%;
+#currentFighter img {
   margin: auto;
+  width: 400px;
 }
 
-.teamThumbnail img {
+#currentFighter button {
+  width: 50%;
+  height: 30px;
+}
+
+#enemyFighter img {
   margin: auto;
-  background-color:gray;
-  justify-content: center;
-  width: 100px;
+  width: 400px;
 }
 
-#submitButton {
-  margin:auto;
-  width: 300px;
+.outcome1 {
+  font-size: 70px;
+  color: green;
+}
+
+.outcome2 {
+  font-size: 70px;
+  color: red;
+}
+
+.outcome3 {
+  font-size: 70px;
+  color: rgba(23, 106, 216, 0.425);
 }

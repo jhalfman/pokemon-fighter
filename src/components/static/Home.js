@@ -2,7 +2,9 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div>Pokemon Fighter</div>
+    <div id="homePage">
+      
+    </div>
   )
 }
 

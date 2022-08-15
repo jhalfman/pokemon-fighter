@@ -122,8 +122,10 @@ const Team = ({pokemonList, teamList, setTeamList}) => {
                     })}
                 </select>
             </div>
-            <input type="text" placeholder="Enter Team Name Here..." name="teamName" value={teamForm.teamName} onChange={updatePokemonTeam}></input>
-            <input type="submit" value="CONFIRM TEAM"></input>
+            <div className="break"></div>
+            <input id="teamNameSubmission" type="text" placeholder="Enter Team Name Here..." name="teamName" value={teamForm.teamName} onChange={updatePokemonTeam}></input>
+            <div className="break"></div>
+            <input id="teamSubmissionButton" type="submit" value="CONFIRM TEAM"></input>
         </form>
     </div>
   )

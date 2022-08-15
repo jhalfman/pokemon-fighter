@@ -247,10 +247,12 @@ const Battle = ({teamList, pokemonList, newRecordUpdate}) => {
                         return <option key={team.id} value={team.teamName}>{team.teamName}</option>
                     })}
                 </select>
-                <img src={currentTeam.pokemon1.sprite}/>
-                <img src={currentTeam.pokemon2.sprite}/>
-                <img src={currentTeam.pokemon3.sprite}/>
-                <button onClick={startFight}>Start Fight</button>
+                <div className="break"></div>
+                <img className="teamPreview" src={currentTeam.pokemon1.sprite}/>
+                <img className="teamPreview" src={currentTeam.pokemon2.sprite}/>
+                <img className="teamPreview" src={currentTeam.pokemon3.sprite}/>
+                <div className="break"></div>
+                <button id="startFightButton" onClick={startFight}>Start Fight</button>
             </>
         )
     }
@@ -272,48 +274,60 @@ const Battle = ({teamList, pokemonList, newRecordUpdate}) => {
     if (opponentTeam) {
         const opponentTeamDisplay = opponentTeam.map(opponent => {
             return (
-                <div key={opponent.id}>
-                    <h4>{opponent.name} - {opponent.alive ? (opponent.hp + "hp") : "Dead"}</h4>
+                <div key={opponent.id} className='battlePokemon'>
+                    <h4>{opponent.name}</h4>
                     <img src={opponent.sprite}></img>
                 </div>
             )
         })
         const userTeamDisplay = (
             <>
-                <div onClick={() => {setCurrentFighter(currentTeam.pokemon1); opponentSelection()}}>
-                    <h4>{currentTeam.pokemon1.name} - {currentTeam.pokemon1.alive ? (currentTeam.pokemon1.hp + " hp"): "Dead"}</h4>
+                <div className='battlePokemon' onClick={() => {setCurrentFighter(currentTeam.pokemon1); opponentSelection()}}>
+                    <h4>{currentTeam.pokemon1.name}</h4>
                     <img src={currentTeam.pokemon1.sprite} />
                 </div>
-                <div onClick={() => {setCurrentFighter(currentTeam.pokemon2); opponentSelection()}}>
-                <h4>{currentTeam.pokemon2.name} - {currentTeam.pokemon2.alive ? (currentTeam.pokemon2.hp + " hp"): "Dead"}</h4>
+                <div className='battlePokemon' onClick={() => {setCurrentFighter(currentTeam.pokemon2); opponentSelection()}}>
+                <h4>{currentTeam.pokemon2.name}</h4>
                     <img src={currentTeam.pokemon2.sprite} />
                 </div>
-                <div onClick={() => {setCurrentFighter(currentTeam.pokemon3); opponentSelection()}}>
-                <h4>{currentTeam.pokemon3.name} - {currentTeam.pokemon3.alive ? (currentTeam.pokemon3.hp + " hp"): "Dead"}</h4>
+                <div className='battlePokemon' onClick={() => {setCurrentFighter(currentTeam.pokemon3); opponentSelection()}}>
+                <h4>{currentTeam.pokemon3.name}</h4>
                     <img src={currentTeam.pokemon3.sprite} />
                 </div>
             </>
         )
         battleDiv = (
             <>
-            {userTeamDisplay}
-            -----VS------
-            {opponentTeamDisplay}
+            {currentFighter ? null : userTeamDisplay}
+            {currentFighter ? null : <div id="fighterSelect">
+                <h2>&lt;-----{currentTeam.teamName}</h2>
+                <h1>Select your fighter!</h1>
+                <h2>Enemy team -----&gt;</h2>
+            </div>}
+            {currentFighter ? null : opponentTeamDisplay}
+            <div className="break"></div>
             {currentFighter ? (
-                <div>
+                <div id="currentFighter">
                     <img src={currentFighter.sprite}></img>
+                    <div className="break"></div>
                     <button onClick={() => attack(currentFighter, 0)}>{currentFighter.abilities[0]}</button>
                     <button onClick={() => attack(currentFighter, 1)}>{currentFighter.abilities[1]}</button>
                 </div>
             ) : null}
+            {currentFighter ? <div id="fighterSelect">
+                <h2>&lt;-----{currentFighter.name}</h2>
+                <h1>Select your Attack!</h1>
+                <h2>{opponentFighter.name} -----&gt;</h2>
+            </div> : null}
             {opponentFighter ? (
-                <div>
+                <div id="enemyFighter">
                     <img src={opponentFighter.sprite}></img>
                 </div>
             ) : null}
-            {(outcome === "wins") ? <h2>YOU WIN</h2> : null}
-            {(outcome === "losses") ? <h2>YOU LOSE</h2> : null}
-            {(outcome === "draws") ? <h2>YOU TIE</h2> : null}
+            <div className="break"></div>
+            {(outcome === "wins") ? <h2 className='outcome1'>YOU WIN</h2> : null}
+            {(outcome === "losses") ? <h2 className='outcome2'>YOU LOSE</h2> : null}
+            {(outcome === "draws") ? <h2 className='outcome3'>YOU TIE</h2> : null}
             </>
         )
             
@@ -321,7 +335,7 @@ const Battle = ({teamList, pokemonList, newRecordUpdate}) => {
 
 
   return (
-    <div style={{display: 'flex'}}>
+    <div id="battleBoxContainer">
         {battleDiv ? battleDiv : teamSelectionDiv}
     </div>
   )

@@ -2421,8 +2421,8 @@
     {
       "teamName": "Starter pokemon",
       "wins": 2,
-      "losses": 2,
-      "draws": 4,
+      "losses": 3,
+      "draws": 6,
       "pokemon1": {
         "name": "bulbasaur",
         "url": "https://pokeapi.co/api/v2/pokemon/1/",
@@ -2475,9 +2475,9 @@
     },
     {
       "teamName": "Legendary Birds",
-      "wins": 1,
+      "wins": 2,
       "losses": 2,
-      "draws": 4,
+      "draws": 6,
       "pokemon1": {
         "name": "articuno",
         "url": "https://pokeapi.co/api/v2/pokemon/144/",
@@ -2530,9 +2530,9 @@
     },
     {
       "teamName": "Eevolutions",
-      "wins": 1,
+      "wins": 2,
       "losses": 3,
-      "draws": 0,
+      "draws": 1,
       "pokemon1": {
         "name": "vaporeon",
         "url": "https://pokeapi.co/api/v2/pokemon/134/",
@@ -2585,7 +2585,7 @@
     },
     {
       "teamName": "Starter Final Forms",
-      "wins": 1,
+      "wins": 3,
       "losses": 0,
       "draws": 2,
       "pokemon1": {
@@ -2640,9 +2640,9 @@
     },
     {
       "teamName": "Cool guys",
-      "wins": 1,
+      "wins": 3,
       "losses": 0,
-      "draws": 3,
+      "draws": 10,
       "pokemon1": {
         "name": "alakazam",
         "url": "https://pokeapi.co/api/v2/pokemon/65/",
@@ -2692,6 +2692,61 @@
         ]
       },
       "id": 5
+    },
+    {
+      "teamName": "Bugs",
+      "wins": 1,
+      "losses": 0,
+      "draws": 1,
+      "pokemon1": {
+        "name": "butterfree",
+        "url": "https://pokeapi.co/api/v2/pokemon/12/",
+        "id": 12,
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png",
+        "types": {
+          "type1": "bug",
+          "type2": "flying"
+        },
+        "hp": 100,
+        "alive": true,
+        "abilities": [
+          "bug attack",
+          "flying attack"
+        ]
+      },
+      "pokemon2": {
+        "name": "beedrill",
+        "url": "https://pokeapi.co/api/v2/pokemon/15/",
+        "id": 15,
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
+        "types": {
+          "type1": "bug",
+          "type2": "poison"
+        },
+        "hp": 100,
+        "alive": true,
+        "abilities": [
+          "bug attack",
+          "poison attack"
+        ]
+      },
+      "pokemon3": {
+        "name": "venomoth",
+        "url": "https://pokeapi.co/api/v2/pokemon/49/",
+        "id": 49,
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png",
+        "types": {
+          "type1": "bug",
+          "type2": "poison"
+        },
+        "hp": 100,
+        "alive": true,
+        "abilities": [
+          "bug attack",
+          "poison attack"
+        ]
+      },
+      "id": 6
     }
   ]
 }

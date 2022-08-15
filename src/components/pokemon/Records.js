@@ -2,10 +2,10 @@ import React from 'react'
 
 const Records = ({teamList}) => {
   return (
-    <div>
+    <div id="recordsBox">
         {teamList.map(team => {
             return (
-                <div key={team.id}>
+                <div key={team.id} id="teamScore">
                     <h1>{team.teamName}</h1>
                     <h3>wins: {team.wins}</h3>
                     <h3>losses: {team.losses}</h3>
