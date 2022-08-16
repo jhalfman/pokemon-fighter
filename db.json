@@ -2586,7 +2586,7 @@
     {
       "teamName": "Starter Final Forms",
       "wins": 3,
-      "losses": 0,
+      "losses": 1,
       "draws": 2,
       "pokemon1": {
         "name": "venusaur",
@@ -2747,6 +2747,61 @@
         ]
       },
       "id": 6
+    },
+    {
+      "teamName": "Fish Boys",
+      "wins": 0,
+      "losses": 0,
+      "draws": 1,
+      "pokemon1": {
+        "name": "krabby",
+        "url": "https://pokeapi.co/api/v2/pokemon/98/",
+        "id": 98,
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png",
+        "types": {
+          "type1": "water",
+          "type2": "none"
+        },
+        "hp": 100,
+        "alive": true,
+        "abilities": [
+          "water attack",
+          "normal attack"
+        ]
+      },
+      "pokemon2": {
+        "name": "horsea",
+        "url": "https://pokeapi.co/api/v2/pokemon/116/",
+        "id": 116,
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png",
+        "types": {
+          "type1": "water",
+          "type2": "none"
+        },
+        "hp": 100,
+        "alive": true,
+        "abilities": [
+          "water attack",
+          "normal attack"
+        ]
+      },
+      "pokemon3": {
+        "name": "goldeen",
+        "url": "https://pokeapi.co/api/v2/pokemon/118/",
+        "id": 118,
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png",
+        "types": {
+          "type1": "water",
+          "type2": "none"
+        },
+        "hp": 100,
+        "alive": true,
+        "abilities": [
+          "water attack",
+          "normal attack"
+        ]
+      },
+      "id": 7
     }
   ]
 }
