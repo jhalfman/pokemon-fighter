@@ -56,6 +56,7 @@ const Team = ({pokemonList, teamList, setTeamList}) => {
             ]
           }
     })
+    const URL = "https://pokemonfighterserver.herokuapp.com/"
 
     function updatePokemonTeam(e) {
         if (e.target.name !== "teamName") {
@@ -82,7 +83,7 @@ const Team = ({pokemonList, teamList, setTeamList}) => {
             alert("Team name already used")
             return null;
         }
-        await fetch("http://localhost:3000/teams", {
+        await fetch(URL + "teams", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

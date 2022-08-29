@@ -13,12 +13,12 @@ const NavBar = () => {
         <Link to="/team" className="link" style={({ isActive }) => ({
     background: isActive ? 'yellow' : 'rgb(170, 167, 167)',
   })}>Team</Link>
+          <Link to="/battle" className="link" style={({ isActive }) => ({
+      background: isActive ? 'yellow' : 'rgb(170, 167, 167)',
+    })}>BATTLE</Link>
         <Link to="/records" className="link" style={({ isActive }) => ({
     background: isActive ? 'yellow' : 'rgb(170, 167, 167)',
   })}>Records</Link>
-        <Link to="/battle" className="link" style={({ isActive }) => ({
-    background: isActive ? 'yellow' : 'rgb(170, 167, 167)',
-  })}>BATTLE</Link>
     </div>
   )
 }

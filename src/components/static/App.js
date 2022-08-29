@@ -12,17 +12,18 @@ import PokemonHighlight from '../pokemon/PokemonHighlight';
 function App() {
   const [pokemonList, setPokemonList] = useState([]);
   const [teamList, setTeamList] = useState([]);
+  const URL = "https://pokemonfighterserver.herokuapp.com/"
 
 
-  useEffect(() => {fetch("http://localhost:3000/pokemon")
+  useEffect(() => {fetch(URL + "pokemon")
     .then(resp => resp.json())
     .then(data => {
     setPokemonList(data);
    })
-   fetch("http://localhost:3000/teams")
+   fetch(URL + "teams")
    .then(resp => resp.json())
    .then(data => {
-    setTeamList(data);
+    setTeamList(data)
    })
 }, [])
 

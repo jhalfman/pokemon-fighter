@@ -7,6 +7,7 @@ const Battle = ({teamList, pokemonList, newRecordUpdate}) => {
     const [currentFighter, setCurrentFighter] = useState(null);
     const [opponentFighter, setOpponentFighter] = useState(null);
     const [outcome, setOutcome] = useState(null)
+    const URL = "https://pokemonfighterserver.herokuapp.com/"
     
     const nameState = useLocation().state;
     useEffect(() => {
@@ -60,7 +61,7 @@ const Battle = ({teamList, pokemonList, newRecordUpdate}) => {
     function recordUpdate(outcome) {
         let updatedRecord = {[outcome]: currentTeam[outcome] + 1}
         setOutcome(outcome);
-        fetch(`http://localhost:3000/teams/${currentTeam.id}`, {
+        fetch(URL + `teams/${currentTeam.id}`, {
             method: "PATCH",
             headers: {
                 "Accept": "applicaton/json",

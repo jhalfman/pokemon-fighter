@@ -2420,9 +2420,9 @@
   "teams": [
     {
       "teamName": "Starter pokemon",
-      "wins": 2,
+      "wins": 3,
       "losses": 3,
-      "draws": 6,
+      "draws": 7,
       "pokemon1": {
         "name": "bulbasaur",
         "url": "https://pokeapi.co/api/v2/pokemon/1/",
@@ -2475,9 +2475,9 @@
     },
     {
       "teamName": "Legendary Birds",
-      "wins": 2,
+      "wins": 3,
       "losses": 2,
-      "draws": 6,
+      "draws": 7,
       "pokemon1": {
         "name": "articuno",
         "url": "https://pokeapi.co/api/v2/pokemon/144/",
@@ -2532,7 +2532,7 @@
       "teamName": "Eevolutions",
       "wins": 2,
       "losses": 3,
-      "draws": 1,
+      "draws": 3,
       "pokemon1": {
         "name": "vaporeon",
         "url": "https://pokeapi.co/api/v2/pokemon/134/",
@@ -2587,7 +2587,7 @@
       "teamName": "Starter Final Forms",
       "wins": 3,
       "losses": 0,
-      "draws": 2,
+      "draws": 3,
       "pokemon1": {
         "name": "venusaur",
         "url": "https://pokeapi.co/api/v2/pokemon/3/",
@@ -2642,7 +2642,7 @@
       "teamName": "Cool guys",
       "wins": 3,
       "losses": 0,
-      "draws": 10,
+      "draws": 12,
       "pokemon1": {
         "name": "alakazam",
         "url": "https://pokeapi.co/api/v2/pokemon/65/",
@@ -2697,7 +2697,7 @@
       "teamName": "Bugs",
       "wins": 1,
       "losses": 0,
-      "draws": 1,
+      "draws": 2,
       "pokemon1": {
         "name": "butterfree",
         "url": "https://pokeapi.co/api/v2/pokemon/12/",
@@ -2747,6 +2747,116 @@
         ]
       },
       "id": 6
+    },
+    {
+      "teamName": "Test1",
+      "wins": 0,
+      "losses": 1,
+      "draws": 0,
+      "pokemon1": {
+        "name": "charizard",
+        "url": "https://pokeapi.co/api/v2/pokemon/6/",
+        "id": 6,
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+        "types": {
+          "type1": "fire",
+          "type2": "flying"
+        },
+        "hp": 100,
+        "alive": true,
+        "abilities": [
+          "fire attack",
+          "flying attack"
+        ]
+      },
+      "pokemon2": {
+        "name": "omastar",
+        "url": "https://pokeapi.co/api/v2/pokemon/139/",
+        "id": 139,
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png",
+        "types": {
+          "type1": "rock",
+          "type2": "water"
+        },
+        "hp": 100,
+        "alive": true,
+        "abilities": [
+          "rock attack",
+          "water attack"
+        ]
+      },
+      "pokemon3": {
+        "name": "bulbasaur",
+        "url": "https://pokeapi.co/api/v2/pokemon/1/",
+        "id": 1,
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+        "types": {
+          "type1": "grass",
+          "type2": "poison"
+        },
+        "hp": 100,
+        "alive": true,
+        "abilities": [
+          "grass attack",
+          "poison attack"
+        ]
+      },
+      "id": 7
+    },
+    {
+      "teamName": "test2",
+      "wins": 0,
+      "losses": 0,
+      "draws": 1,
+      "pokemon1": {
+        "name": "koffing",
+        "url": "https://pokeapi.co/api/v2/pokemon/109/",
+        "id": 109,
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png",
+        "types": {
+          "type1": "poison",
+          "type2": "none"
+        },
+        "hp": 100,
+        "alive": true,
+        "abilities": [
+          "poison attack",
+          "normal attack"
+        ]
+      },
+      "pokemon2": {
+        "name": "poliwag",
+        "url": "https://pokeapi.co/api/v2/pokemon/60/",
+        "id": 60,
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png",
+        "types": {
+          "type1": "water",
+          "type2": "none"
+        },
+        "hp": 100,
+        "alive": true,
+        "abilities": [
+          "water attack",
+          "normal attack"
+        ]
+      },
+      "pokemon3": {
+        "name": "omanyte",
+        "url": "https://pokeapi.co/api/v2/pokemon/138/",
+        "id": 138,
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png",
+        "types": {
+          "type1": "rock",
+          "type2": "water"
+        },
+        "hp": 100,
+        "alive": true,
+        "abilities": [
+          "rock attack",
+          "water attack"
+        ]
+      },
+      "id": 8
     }
   ]
 }
