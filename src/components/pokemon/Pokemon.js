@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 const Pokemon = ({pokemon}) => {
 
     return (
-        <Link to={`/pokemon/${pokemon.id}`} ><img id='pokemonSprite' src={pokemon.sprite}></img></Link>
+        <Link to={`/pokemon/${pokemon.id}`} ><img id='pokemonSprite' src={pokemon.sprite} alt={pokemon.name}></img></Link>
     )
 }
 

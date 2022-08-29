@@ -10,7 +10,7 @@ const PokemonHighlight = ({pokemonList}) => {
         highlightDiv = (
         <div className='pokemonHighlight'>
             <h2 id='highlightTitle'>{highlight.name}</h2>
-            <img id='highlightedPokemon' src={highlight.sprite} alt="big picture"/>
+            <img id='highlightedPokemon' src={highlight.sprite} alt="big zoom"/>
             <h4 id='statBox'>Type 1: {highlight.types.type1} <br></br> Type 2: {highlight.types.type2} <br></br> HP: {highlight.hp} <br></br> Abilities: {highlight.abilities[0]} | {highlight.abilities[1]}</h4> 
         </div>
         )

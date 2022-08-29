@@ -2422,7 +2422,7 @@
       "teamName": "Starter pokemon",
       "wins": 3,
       "losses": 3,
-      "draws": 7,
+      "draws": 8,
       "pokemon1": {
         "name": "bulbasaur",
         "url": "https://pokeapi.co/api/v2/pokemon/1/",
@@ -2477,7 +2477,7 @@
       "teamName": "Legendary Birds",
       "wins": 3,
       "losses": 2,
-      "draws": 7,
+      "draws": 8,
       "pokemon1": {
         "name": "articuno",
         "url": "https://pokeapi.co/api/v2/pokemon/144/",
@@ -2532,7 +2532,7 @@
       "teamName": "Eevolutions",
       "wins": 2,
       "losses": 3,
-      "draws": 3,
+      "draws": 4,
       "pokemon1": {
         "name": "vaporeon",
         "url": "https://pokeapi.co/api/v2/pokemon/134/",
@@ -2585,7 +2585,7 @@
     },
     {
       "teamName": "Starter Final Forms",
-      "wins": 3,
+      "wins": 4,
       "losses": 0,
       "draws": 3,
       "pokemon1": {
@@ -2747,61 +2747,6 @@
         ]
       },
       "id": 6
-    },
-    {
-      "teamName": "Test1",
-      "wins": 0,
-      "losses": 1,
-      "draws": 0,
-      "pokemon1": {
-        "name": "charizard",
-        "url": "https://pokeapi.co/api/v2/pokemon/6/",
-        "id": 6,
-        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
-        "types": {
-          "type1": "fire",
-          "type2": "flying"
-        },
-        "hp": 100,
-        "alive": true,
-        "abilities": [
-          "fire attack",
-          "flying attack"
-        ]
-      },
-      "pokemon2": {
-        "name": "omastar",
-        "url": "https://pokeapi.co/api/v2/pokemon/139/",
-        "id": 139,
-        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png",
-        "types": {
-          "type1": "rock",
-          "type2": "water"
-        },
-        "hp": 100,
-        "alive": true,
-        "abilities": [
-          "rock attack",
-          "water attack"
-        ]
-      },
-      "pokemon3": {
-        "name": "bulbasaur",
-        "url": "https://pokeapi.co/api/v2/pokemon/1/",
-        "id": 1,
-        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
-        "types": {
-          "type1": "grass",
-          "type2": "poison"
-        },
-        "hp": 100,
-        "alive": true,
-        "abilities": [
-          "grass attack",
-          "poison attack"
-        ]
-      },
-      "id": 7
     }
   ]
 }

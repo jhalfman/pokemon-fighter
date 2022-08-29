@@ -12,7 +12,7 @@ import PokemonHighlight from '../pokemon/PokemonHighlight';
 function App() {
   const [pokemonList, setPokemonList] = useState([]);
   const [teamList, setTeamList] = useState([]);
-  const URL = "https://pokemonfighterserver.herokuapp.com/"
+  const URL = "http://localhost:3000/"
 
 
   useEffect(() => {fetch(URL + "pokemon")
@@ -38,6 +38,11 @@ function newRecordUpdate(newTeamRecord) {
   })
   setTeamList([...newTeamList]);
 }
+
+function updateTeams(id) {
+  const newTeamList = teamList.filter(team => team.id !== id)
+  setTeamList(newTeamList);
+}
                 
   return (
     <div className="App">
@@ -50,7 +55,7 @@ function newRecordUpdate(newTeamRecord) {
         </Route>
         <Route path="/team" element={<Team pokemonList={pokemonList} teamList={teamList} setTeamList={setTeamList}/>} />
         <Route path="/battle" element={<Battle teamList={teamList} pokemonList={pokemonList} newRecordUpdate={newRecordUpdate}/>} />
-        <Route path="/records" element={<Records teamList={teamList}/>} />
+        <Route path="/records" element={<Records teamList={teamList} updateTeams={updateTeams}/>} />
       </Routes>
     </div>
   );

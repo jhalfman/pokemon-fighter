@@ -56,7 +56,7 @@ const Team = ({pokemonList, teamList, setTeamList}) => {
             ]
           }
     })
-    const URL = "https://pokemonfighterserver.herokuapp.com/"
+    const URL = "http://localhost:3000/"
 
     function updatePokemonTeam(e) {
         if (e.target.name !== "teamName") {
@@ -90,8 +90,8 @@ const Team = ({pokemonList, teamList, setTeamList}) => {
             },
             body: JSON.stringify(teamForm)
         }).then(resp => resp.json())
-        .then(data => {
-            setTeamList([...teamList, data])
+        .then(newTeam => {
+            setTeamList([...teamList, newTeam])
         })
         navigate("/battle", {state: {teamName: teamForm.teamName}});
     }
@@ -100,7 +100,7 @@ const Team = ({pokemonList, teamList, setTeamList}) => {
     <div id='teamContainer'>
         <form id="pokemonTeamForm" onSubmit={handleSubmit}>
             <div id='pokemon1'>
-                <img src={teamForm.pokemon1.sprite} />
+                <img src={teamForm.pokemon1.sprite} alt="pokemon 1"/>
                 <select name="pokemon1" id="pokemonList1" onChange={updatePokemonTeam} value={teamForm.pokemon1.name}>
                     {pokemonList.map(pokemon => {
                         return <option key={pokemon.id} value={pokemon.name}>{pokemon.id} - {pokemon.name}</option>
@@ -108,7 +108,7 @@ const Team = ({pokemonList, teamList, setTeamList}) => {
                 </select>
             </div>
             <div id='pokemon2'>
-                <img src={teamForm.pokemon2.sprite} />   
+                <img src={teamForm.pokemon2.sprite} alt="pokemon 2"/>   
                 <select name="pokemon2" id="pokemonList2" onChange={updatePokemonTeam} value={teamForm.pokemon2.name}>
                     {pokemonList.map(pokemon => {
                         return <option key={pokemon.id} value={pokemon.name}>{pokemon.id} - {pokemon.name}</option>
@@ -116,7 +116,7 @@ const Team = ({pokemonList, teamList, setTeamList}) => {
                 </select>
             </div>
             <div id='pokemon3'>
-                <img src={teamForm.pokemon3.sprite} />
+                <img src={teamForm.pokemon3.sprite} alt="pokemon 3"/>
                 <select name="pokemon3" id="pokemonList3" onChange={updatePokemonTeam} value={teamForm.pokemon3.name}>
                     {pokemonList.map(pokemon => {
                         return <option key={pokemon.id} value={pokemon.name}>{pokemon.id} - {pokemon.name}</option>
@@ -133,47 +133,3 @@ const Team = ({pokemonList, teamList, setTeamList}) => {
 }
 
 export default Team
-
-/* 
-import React from 'react'
-
-const Team = ({team, removeFromTeam}) => {
-  return (
-    <div>
-      <h2>CURRENT TEAM</h2>
-      {team.map(mon => {
-        return (
-          <div>
-            <img src={mon.sprite} alt="team pic" key={mon.name}></img>
-            <button onClick={() => removeFromTeam(mon)}>REMOVE FROM TEAM</button>
-          </div>
-        )
-      })}
-      <button>FIGHT</button>
-    </div>
-  )
-}
-
-export default Team
-*/
-
-/*
-import React from 'react'
-
-const TeamForm = ({team}) => {
-    console.log(team);
-  return (
-    <form id='teamForm'>
-        <h2 style={{width: "100%", textAlign: 'center'}}>Current Team</h2>
-        <label name="teamName">Enter Team Name:</label>
-        <input type="text" name="teamName" id="teamNameField" placeholder='...'></input>
-        <div className='teamThumbnail'>{team[0] ? <img src={team[0].sprite}/> : null}</div>
-        <div className='teamThumbnail'>{team[1] ? <img src={team[1].sprite}/> : null}</div>
-        <div className='teamThumbnail'>{team[2] ? <img src={team[2].sprite}/> : null}</div>
-        <input type="submit" id="submitButton" value="Submit Team For Fight"></input>
-    </form>
-  )
-}
-
-export default TeamForm
-*/
